@@ -1,9 +1,9 @@
 import React from "react";
-import { ProfilePage } from "../ProfilePage";
+import { ProfilePage } from "../../template/ProfilePage";
 
 import * as S from "./styles";
 
-const Main: React.FC = () => {
+export function Main() {
   return (
     <S.Container>
       <S.Header>
@@ -27,6 +27,4 @@ const Main: React.FC = () => {
       </S.BottomMenu>
     </S.Container>
   );
-};
-
-export default Main;
+}
