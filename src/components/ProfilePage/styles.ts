@@ -40,7 +40,7 @@ export const Avatar = styled.div`
 
     position: absolute;
     bottom: max(-6rem, -10vw);
-    left: 1.5rem;
+    left: ${theme.font.sizes.medium};
   `}
 `;
 
@@ -55,16 +55,17 @@ export const ProfileData = styled.div`
 
     > h1 {
       font-weight: bold;
-      font-size: 1.9rem;
+      font-size: ${theme.font.sizes.xlarge};
+      color: ${theme.colors.white};
     }
     > h2 {
       font-weight: normal;
-      font-size: 1.5rem;
+      font-size: ${theme.font.sizes.medium};
 
       color: ${theme.colors.gray};
     }
     > p {
-      font-size: 1.5rem;
+      font-size: ${theme.font.sizes.medium};
       margin-top: 1.1rem;
 
       > a {
@@ -78,7 +79,7 @@ export const ProfileData = styled.div`
       margin-bottom: 1rem;
 
       > li {
-        font-size: 1.5rem;
+        font-size: ${theme.font.sizes.medium};
         color: ${theme.colors.gray};
 
         > svg {
@@ -110,8 +111,13 @@ export const Followage = styled.div`
   ${({ theme }) => css`
     display: flex;
 
+    strong {
+      font-size: ${theme.font.sizes.medium};
+      color: ${theme.colors.white};
+    }
+
     > span {
-      font-size: 1.5rem;
+      font-size: ${theme.font.sizes.medium};
       color: ${theme.colors.gray};
 
       & + span {
@@ -122,16 +128,18 @@ export const Followage = styled.div`
 `;
 
 export const EditButton = styled(Button)`
-  position: absolute;
-  top: 2vw;
-  right: 0.7rem;
+  ${({ theme }) => css`
+    position: absolute;
+    top: 2vw;
+    right: 0.7rem;
 
-  padding: 0.4rem 1.6rem;
-  font-size: 1.3rem;
+    padding: 0.4rem 1.6rem;
+    font-size: ${theme.font.sizes.small};
 
-  @media (min-width: 32rem) {
-    top: 1rem;
-    padding: 1rem 1.9rem;
-    font-size: 1.5rem;
-  }
+    @media (min-width: 32rem) {
+      top: 1rem;
+      padding: 1rem 1.9rem;
+      font-size: ${theme.font.sizes.medium};
+    }
+  `}
 `;

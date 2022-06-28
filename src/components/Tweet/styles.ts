@@ -20,7 +20,7 @@ export const Retweeted = styled.div`
     display: flex;
     align-items: center;
 
-    font-size: 1.3rem;
+    font-size: ${theme.font.sizes.small};
     color: ${theme.colors.gray};
   `}
 `;
@@ -71,11 +71,12 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
 
-    font-size: 1.5rem;
+    font-size: ${theme.font.sizes.medium};
     white-space: nowrap;
 
     > strong {
       margin-right: 0.5rem;
+      color: ${theme.colors.white};
     }
 
     > span,
@@ -102,8 +103,12 @@ export const Dot = styled.div`
 `;
 
 export const Description = styled.p`
-  font-size: 1.4rem;
-  margin-top: 0.4rem;
+  ${({ theme }) => css`
+    // 14px
+    font-size: ${theme.font.sizes.medium};
+    color: ${theme.colors.white};
+    margin-top: 0.4rem;
+  `}
 `;
 
 export const ImageContent = styled.div`
@@ -147,8 +152,8 @@ export const Status = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-
-    font-size: 1.4rem;
+    //14px
+    font-size: ${theme.font.sizes.medium};
 
     > svg {
       margin-right: 0.5rem;

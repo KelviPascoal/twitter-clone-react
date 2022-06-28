@@ -67,10 +67,11 @@ export const ProfileInfo = styled.div`
     flex-direction: column;
 
     > strong {
-      font-size: 1.9rem;
+      color: ${theme.colors.white};
+      font-size: ${theme.font.sizes.xlarge};
     }
     > span {
-      font-size: 1.5rem;
+      font-size: ${theme.font.sizes.medium};
       color: ${theme.colors.gray};
     }
   `}

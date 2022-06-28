@@ -30,10 +30,10 @@ export function ProfilePage() {
 
         <S.Followage>
           <span>
-            seguindo <strong>94</strong>
+            seguindo <strong>34</strong>
           </span>
           <span>
-            <strong>672 </strong> seguidores
+            <strong>0 </strong> seguidores
           </span>
         </S.Followage>
       </S.ProfileData>

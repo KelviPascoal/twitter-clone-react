@@ -21,8 +21,7 @@ export function Tweet() {
           <S.Header>
             <strong>Rocketseat</strong>
             <span>@rocketseat</span>
-            <S.Dot />
-            <time>27 de jun</time>
+            <S.Dot /> <time>27 de jun</time>
           </S.Header>
 
           <S.Description>Foguete não tem ré 🚀</S.Description>
