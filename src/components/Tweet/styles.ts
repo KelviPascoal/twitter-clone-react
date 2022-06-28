@@ -128,24 +128,26 @@ export const ImageContent = styled.div`
 `;
 
 export const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 1.1rem auto 0;
-  width: 100%; /** Mobile */
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1.1rem auto 0;
+    width: 100%; /** Mobile */
 
-  @media (min-width: 33rem) {
-    width: 63%;
-  }
-
-  > div {
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.7;
+    @media (min-width: ${theme.breakpoints.sm}) {
+      width: 63%;
     }
-  }
+
+    > div {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  `}
 `;
 
 export const Status = styled.div`
