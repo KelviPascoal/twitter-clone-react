@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 import { LocationOn, Cake } from "../../styles/Icons";
-import { Button } from "../Button";
+import { Button } from "../../components/Button";
 
 export const Container = styled.div`
   display: flex;
@@ -136,7 +136,7 @@ export const EditButton = styled(Button)`
     padding: 0.4rem 1.6rem;
     font-size: ${theme.font.sizes.small};
 
-    @media (min-width: 32rem) {
+    @media (min-width: ${theme.breakpoints.xs}) {
       top: 1rem;
       padding: 1rem 1.9rem;
       font-size: ${theme.font.sizes.medium};

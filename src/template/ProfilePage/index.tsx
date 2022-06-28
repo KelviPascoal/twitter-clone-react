@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Feed } from "../Feed";
+import { Feed } from "../../components/Feed";
 
 import * as S from "./styles";
 
