@@ -12,7 +12,7 @@ export const Tab = styled.div`
     text-align: center;
 
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: ${theme.font.sizes.medium};
 
     outline: 0;
     cursor: pointer;
