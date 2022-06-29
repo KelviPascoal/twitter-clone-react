@@ -8,6 +8,7 @@ import {
   Person,
   ExitToApp,
   Rocketseat,
+  Search,
 } from "../../styles/Icons";
 import { Button } from "../Button";
 
@@ -150,6 +151,9 @@ export const FavoriteIcon = styled(FavoriteBorder)`
 export const ProfileIcon = styled(Person)`
   ${iconCSS}
 `;
+export const SearchIcon = styled(Search)`
+  ${iconCSS}
+`;
 
 export const Botside = styled.div`
   margin-top: 2rem;
@@ -213,6 +217,28 @@ export const TweetarButton = styled(Button)`
   ${({ theme }) => css`
     span {
       font-size: ${theme.font.sizes.medium};
+    }
+  `}
+`;
+
+export const BottomMenu = styled.div`
+  ${({ theme }) => css`
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    background: ${theme.colors.primary};
+    width: 100%;
+    border-top: 0.1rem solid ${theme.colors.outline};
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.8rem min(4.6rem, max(10vw, 1rem));
+
+    @media (min-width: ${theme.breakpoints.sm}) {
+      display: none;
     }
   `}
 `;
