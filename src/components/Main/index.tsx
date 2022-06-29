@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfilePage } from "../../template/ProfilePage";
+import { ProfilePage } from "../../templates/ProfilePage";
 
 import * as S from "./styles";
 
@@ -18,13 +18,6 @@ export function Main() {
       </S.Header>
 
       <ProfilePage />
-
-      <S.BottomMenu>
-        <S.HomeIcon className="active" />
-        <S.SearchIcon />
-        <S.BellIcon />
-        <S.EmailIcon />
-      </S.BottomMenu>
     </S.Container>
   );
 }

@@ -77,28 +77,6 @@ export const ProfileInfo = styled.div`
   `}
 `;
 
-export const BottomMenu = styled.div`
-  ${({ theme }) => css`
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-
-    background: ${theme.colors.primary};
-    width: 100%;
-    border-top: 0.1rem solid ${theme.colors.outline};
-
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0.8rem min(4.6rem, max(10vw, 1rem));
-
-    @media (min-width: ${theme.breakpoints.sm}) {
-      display: none;
-    }
-  `}
-`;
-
 const iconCSS = css`
   ${({ theme }) => css`
     width: 3.1rem;
@@ -113,17 +91,4 @@ const iconCSS = css`
       fill: ${theme.colors.twitter};
     }
   `}
-`;
-
-export const HomeIcon = styled(Home)`
-  ${iconCSS}
-`;
-export const SearchIcon = styled(Search)`
-  ${iconCSS}
-`;
-export const BellIcon = styled(Notifications)`
-  ${iconCSS}
-`;
-export const EmailIcon = styled(Email)`
-  ${iconCSS}
 `;
