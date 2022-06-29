@@ -1,11 +1,6 @@
+import { ElementType } from "react";
 import styled, { css } from "styled-components";
-import {
-  ArrowLeft,
-  Home,
-  Search,
-  Notifications,
-  Email,
-} from "../../styles/Icons";
+import { ArrowLeft } from "../../styles/Icons";
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -50,7 +45,7 @@ export const Header = styled.div`
   `}
 `;
 
-export const BackIcon = styled(ArrowLeft)`
+export const BackIcon: ElementType = styled(ArrowLeft)`
   ${({ theme }) => css`
     width: 2.4rem;
     height: 2.4rem;
@@ -73,22 +68,6 @@ export const ProfileInfo = styled.div`
     > span {
       font-size: ${theme.font.sizes.medium};
       color: ${theme.colors.gray};
-    }
-  `}
-`;
-
-const iconCSS = css`
-  ${({ theme }) => css`
-    width: 3.1rem;
-    height: 3.1rem;
-
-    cursor: pointer;
-
-    fill: ${theme.colors.gray};
-
-    &:hover,
-    &.active {
-      fill: ${theme.colors.twitter};
     }
   `}
 `;

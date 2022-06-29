@@ -3,10 +3,10 @@ import * as S from "./styles";
 export function BottomMenu() {
   return (
     <S.BottomMenu>
-      <S.HomeIcon className="active" />
-      <S.SearchIcon />
-      <S.BellIcon />
-      <S.EmailIcon />
+      <S.HomeIcon alt="Pagina inicial" className="active" />
+      <S.SearchIcon alt="Buscar" />
+      <S.BellIcon alt="Notificações" />
+      <S.EmailIcon alt="Mensagens" />
     </S.BottomMenu>
   );
 }

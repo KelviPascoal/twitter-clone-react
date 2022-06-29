@@ -9,31 +9,36 @@ export function LeftMenu() {
         <S.Logo />
 
         <S.MenuButton>
-          <S.HomeIcon />
+          <S.HomeIcon alt="Página inicial" />
+
           <span>Página Inicial</span>
         </S.MenuButton>
 
         <S.MenuButton>
-          <S.BellIcon />
+          <S.BellIcon alt="Notificação" />
+
           <span>Notificações</span>
         </S.MenuButton>
 
         <S.MenuButton>
-          <S.EmailIcon />
+          <S.EmailIcon alt="Mensagens" />
+
           <span>Mensagens</span>
         </S.MenuButton>
 
         <S.MenuButton>
-          <S.FavoriteIcon />
+          <S.FavoriteIcon alt="Favoritos" />
+
           <span>Favoritados</span>
         </S.MenuButton>
 
         <S.MenuButton className="active">
-          <S.ProfileIcon />
+          <S.ProfileIcon alt="Perfil" />
+
           <span>Perfil</span>
         </S.MenuButton>
 
-        <S.TweetarButton>
+        <S.TweetarButton alt="Tweetar">
           <span>Tweetar</span>
         </S.TweetarButton>
       </S.Topside>
@@ -46,7 +51,7 @@ export function LeftMenu() {
           <span>@KelviPascoal</span>
         </S.ProfileData>
 
-        <S.ExitIcon />
+        <S.ExitIcon alt="Sair" />
       </S.Botside>
     </S.Container>
   );

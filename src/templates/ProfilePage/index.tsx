@@ -1,4 +1,5 @@
 import React from "react";
+import { Avatar } from "../../components/Avatar";
 
 import { Feed } from "../../components/Feed";
 
@@ -8,7 +9,9 @@ export function ProfilePage() {
   return (
     <S.Container>
       <S.Banner>
-        <S.Avatar />
+        <S.AvatarWrapper>
+          <Avatar src="/img/foto_perfil.jpg" />
+        </S.AvatarWrapper>
       </S.Banner>
 
       <S.ProfileData>

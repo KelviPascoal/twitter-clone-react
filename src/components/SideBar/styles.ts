@@ -1,3 +1,4 @@
+import { ElementType } from "react";
 import styled, { css } from "styled-components";
 
 import { Search } from "../../styles/Icons";
@@ -62,7 +63,7 @@ export const SearchInput = styled.input`
   `}
 `;
 
-export const SearchIcon = styled(Search)`
+export const SearchIcon: ElementType = styled(Search)`
   ${({ theme }) => css`
     width: 2.7rem;
     height: 2.7rem;

@@ -1,3 +1,4 @@
+import { ElementType } from "react";
 import styled, { css } from "styled-components";
 
 import { Chat, Rocketseat, Favorite } from "../../styles/Icons";
@@ -24,7 +25,7 @@ export const Retweeted = styled.div`
     color: ${theme.colors.gray};
   `}
 `;
-export const RocketseatIcon = styled(Rocketseat)`
+export const RocketseatIcon: ElementType = styled(Rocketseat)`
   ${({ theme }) => css`
     width: 1.6rem;
     height: 1.6rem;
@@ -127,7 +128,7 @@ export const ImageContent = styled.div`
   `}
 `;
 
-export const Icons = styled.div`
+export const Icons: ElementType = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -189,14 +190,14 @@ const iconCSS = css`
   height: 1.9rem;
 `;
 
-export const CommentIcon = styled(Chat)`
+export const CommentIcon: ElementType = styled(Chat)`
   ${iconCSS}
 `;
 
-export const RetweetIcon = styled(Rocketseat)`
+export const RetweetIcon: ElementType = styled(Rocketseat)`
   ${iconCSS}
 `;
 
-export const LikeIcon = styled(Favorite)`
+export const LikeIcon: ElementType = styled(Favorite)`
   ${iconCSS}
 `;

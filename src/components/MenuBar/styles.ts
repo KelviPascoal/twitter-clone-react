@@ -1,3 +1,4 @@
+import { ElementType } from "react";
 import styled, { css } from "styled-components";
 
 import {
@@ -136,22 +137,22 @@ const iconCSS = css`
   `}
 `;
 
-export const HomeIcon = styled(Home)`
+export const HomeIcon: ElementType = styled(Home)`
   ${iconCSS}
 `;
-export const BellIcon = styled(Notifications)`
+export const BellIcon: ElementType = styled(Notifications)`
   ${iconCSS}
 `;
-export const EmailIcon = styled(Email)`
+export const EmailIcon: ElementType = styled(Email)`
   ${iconCSS}
 `;
-export const FavoriteIcon = styled(FavoriteBorder)`
+export const FavoriteIcon: ElementType = styled(FavoriteBorder)`
   ${iconCSS}
 `;
-export const ProfileIcon = styled(Person)`
+export const ProfileIcon: ElementType = styled(Person)`
   ${iconCSS}
 `;
-export const SearchIcon = styled(Search)`
+export const SearchIcon: ElementType = styled(Search)`
   ${iconCSS}
 `;
 
@@ -192,7 +193,7 @@ export const ProfileData = styled.div`
   `}
 `;
 
-export const ExitIcon = styled(ExitToApp)`
+export const ExitIcon: ElementType = styled(ExitToApp)`
   ${({ theme }) => css`
     display: none;
 
@@ -213,7 +214,7 @@ export const ExitIcon = styled(ExitToApp)`
   `}
 `;
 
-export const TweetarButton = styled(Button)`
+export const TweetarButton: ElementType = styled(Button)`
   ${({ theme }) => css`
     span {
       font-size: ${theme.font.sizes.medium};
