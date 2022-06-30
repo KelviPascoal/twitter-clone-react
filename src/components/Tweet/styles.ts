@@ -194,13 +194,19 @@ const iconCSS = (theme: ThemeDefault) => css`
 `;
 
 export const CommentIcon: ElementType = styled(Chat)`
-  ${iconCSS}
+  ${({ theme }) => css`
+    ${iconCSS(theme)}
+  `}
 `;
 
 export const RetweetIcon: ElementType = styled(TwitterLogo)`
-  ${iconCSS}
+  ${({ theme }) => css`
+    ${iconCSS(theme)}
+  `}
 `;
 
 export const LikeIcon: ElementType = styled(Favorite)`
-  ${iconCSS}
+  ${({ theme }) => css`
+    ${iconCSS(theme)}
+  `}
 `;
