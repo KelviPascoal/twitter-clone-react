@@ -1,7 +1,7 @@
 import { ElementType } from "react";
 import styled from "@emotion/styled";
 
-import { Chat, Rocketseat, Favorite } from "../../styles/Icons";
+import { Chat, TwitterLogo, Favorite } from "../../styles/Icons";
 import { css } from "@emotion/react";
 
 export const Container = styled.div`
@@ -26,7 +26,7 @@ export const Retweeted = styled.div`
     color: ${theme.colors.gray};
   `}
 `;
-export const RocketseatIcon: ElementType = styled(Rocketseat)`
+export const RocketseatIcon: ElementType = styled(TwitterLogo)`
   ${({ theme }) => css`
     width: 1.6rem;
     height: 1.6rem;
@@ -195,7 +195,7 @@ export const CommentIcon: ElementType = styled(Chat)`
   ${iconCSS}
 `;
 
-export const RetweetIcon: ElementType = styled(Rocketseat)`
+export const RetweetIcon: ElementType = styled(TwitterLogo)`
   ${iconCSS}
 `;
 

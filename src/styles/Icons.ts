@@ -1,31 +1,20 @@
-// export {
-//   Home,
-//   Notifications,
-//   Email,
-//   FavoriteBorder,
-//   ExitToApp,
-//   LocationOn,
-//   Search,
-//   CalendarToday,
-// } from "styled-icons/material-outlined";
-// export { Person, Cake, Favorite } from "styled-icons/material";
-// export { ArrowLeft } from "styled-icons/heroicons-solid";
-// export { Chat } from "styled-icons/heroicons-outline";
-// export { RocketseatIcon as Rocketseat } from "../components/RocketseatIcon";
-
 export {
-  FaAccessibleIcon as Home,
-  FaAccessibleIcon as Notifications,
-  FaAccessibleIcon as Email,
-  FaAccessibleIcon as FavoriteBorder,
-  FaAccessibleIcon as ExitToApp,
-  FaAccessibleIcon as LocationOn,
-  FaAccessibleIcon as Search,
-  FaAccessibleIcon as CalendarToday,
-  FaAccessibleIcon as Person,
-  FaAccessibleIcon as Cake,
-  FaAccessibleIcon as Favorite,
-  FaAccessibleIcon as ArrowLeft,
-  FaAccessibleIcon as Chat,
-  FaAccessibleIcon as Rocketseat,
+  FaBirthdayCake as Cake,
+  FaTwitter as TwitterLogo,
 } from "react-icons/fa";
+
+export { RiHome7Fill as Home, RiHashtag as Explore } from "react-icons/ri";
+export { VscBell as Notifications } from "react-icons/vsc";
+export { FiMail as Email, FiSearch as Search } from "react-icons/fi";
+export {
+  MdFavoriteBorder as FavoriteBorder,
+  MdLocationOn as LocationOn,
+  MdFavorite as Favorite,
+} from "react-icons/md";
+export {
+  BsThreeDots as Options,
+  BsFillPersonFill as Person,
+  BsChat as Chat,
+  BsArrowLeft as ArrowLeft,
+} from "react-icons/bs";
+export { BiCalendar as CalendarToday } from "react-icons/bi";

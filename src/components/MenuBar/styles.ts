@@ -7,8 +7,8 @@ import {
   Email,
   FavoriteBorder,
   Person,
-  ExitToApp,
-  Rocketseat,
+  Options,
+  TwitterLogo,
   Search,
 } from "../../styles/Icons";
 import { Button } from "../Button";
@@ -49,7 +49,7 @@ export const Topside = styled.div`
   `}
 `;
 
-export const Logo = styled(Rocketseat)`
+export const Logo = styled(TwitterLogo)`
   ${({ theme }) => css`
     width: 4.1rem;
     height: 4.1rem;
@@ -194,7 +194,7 @@ export const ProfileData = styled.div`
   `}
 `;
 
-export const ExitIcon: ElementType = styled(ExitToApp)`
+export const ExitIcon: ElementType = styled(Options)`
   ${({ theme }) => css`
     display: none;
 
