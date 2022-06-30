@@ -16,11 +16,11 @@ export const Container = styled.div`
 
 export const Avatar = styled.div`
   ${({ theme }) => css`
-    width: 4.9rem;
-    height: 4.9rem;
+    width: ${theme.spacings[12]};
+    height: ${theme.spacings[12]};
     background: ${theme.colors.gray};
     border-radius: 50%;
-    margin-right: 1rem;
+    margin-right: ${theme.spacings[2.5]};
   `}
 `;
 
@@ -40,5 +40,7 @@ export const Info = styled.div`
 `;
 
 export const FollowButton = styled(Button)`
-  padding: 0.6rem 1.7rem;
+  ${({ theme }) => css`
+    padding: ${theme.spacings[1.5]} ${theme.spacings[4]};
+  `}
 `;

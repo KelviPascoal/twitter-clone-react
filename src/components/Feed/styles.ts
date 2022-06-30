@@ -8,8 +8,8 @@ export const Container = styled.div`
 
 export const Tab = styled.div`
   ${({ theme }) => css`
-    margin-top: 1rem;
-    padding: 1.1rem 0 1.5rem;
+    margin-top: ${theme.spacings[2.5]};
+    padding: ${theme.spacings[2.5]} 0 ${theme.spacings[4]};
     text-align: center;
 
     font-weight: bold;
@@ -19,7 +19,7 @@ export const Tab = styled.div`
     cursor: pointer;
 
     color: ${theme.colors.twitter};
-    border-bottom: 0.2rem solid ${theme.colors.twitter};
+    border-bottom: ${theme.spacings[0.5]} solid ${theme.colors.twitter};
 
     &:hover {
       background: ${theme.colors.twitterDarkHover};

@@ -5,38 +5,40 @@ import { Search } from "../../styles/Icons";
 import { css } from "@emotion/react";
 
 export const Container = styled.div`
-  display: none;
+  ${({ theme }) => css`
+    display: none;
 
-  @media (min-width: 1000px) {
-    display: flex;
-    flex-direction: column;
+    @media (min-width: ${theme.breakpoints.lg}) {
+      display: flex;
+      flex-direction: column;
 
-    width: min(39.9rem, 100%);
-  }
+      width: min(${theme.spacings[96]}, 100%);
+    }
+  `}
 `;
 
 export const SearchWrapper = styled.div`
   ${({ theme }) => css`
-    padding: 1rem 2.4rem;
-    width: min(39.9rem, 100%);
+    padding: ${theme.spacings[2.5]} ${theme.spacings[6]};
+    width: min(39.9 ${theme.spacings[96]}, 100%);
 
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: ${theme.layers.base};
     background: ${theme.colors.primary};
 
-    max-height: 5.7rem;
+    max-height: ${theme.spacings[14]};
   `}
 `;
 
 export const SearchInput = styled.input`
   ${({ theme }) => css`
     width: 100%;
-    height: 3.9rem;
+    height: ${theme.spacings[10]};
     font-size: ${theme.font.sizes.medium};
     color: ${theme.colors.white};
-    padding: 0 1rem 0 5.2rem;
-    border-radius: 19.5rem;
+    padding: 0 ${theme.spacings[2.5]} 0 ${theme.spacings[13]};
+    border-radius: ${theme.spacings[48]};
     background: ${theme.colors.search};
 
     &::placeholder {
@@ -45,9 +47,9 @@ export const SearchInput = styled.input`
 
     ~ svg {
       position: relative;
-      top: -3.3rem;
-      left: 1.5rem;
-      z-index: 1;
+      top: -${theme.spacings[8]};
+      left: ${theme.spacings[4]};
+      z-index: ${theme.layers.base};
 
       transition: 180ms ease-in-out;
     }
@@ -55,7 +57,7 @@ export const SearchInput = styled.input`
     outline: 0;
 
     &:focus {
-      border: 0.1rem solid ${theme.colors.twitter};
+      border: ${theme.spacings.px} solid ${theme.colors.twitter};
 
       ~ svg {
         fill: ${theme.colors.twitter};
@@ -66,20 +68,22 @@ export const SearchInput = styled.input`
 
 export const SearchIcon: ElementType = styled(Search)`
   ${({ theme }) => css`
-    width: 2.7rem;
-    height: 2.7rem;
+    width: ${theme.spacings[7]};
+    height: ${theme.spacings[7]};
 
     fill: ${theme.colors.gray};
   `}
 `;
 
 export const Body = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 5.7rem 2.4rem 20rem;
-  margin-top: 0.3rem;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    padding: ${theme.spacings[14]} ${theme.spacings[6]} ${theme.spacings[52]};
+    margin-top: ${theme.spacings[1]};
 
-  > div + div {
-    margin-top: 1.5rem;
-  }
+    > div + div {
+      margin-top: ${theme.spacings[4]};
+    }
+  `}
 `;

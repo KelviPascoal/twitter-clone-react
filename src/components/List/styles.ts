@@ -6,24 +6,24 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     background: ${theme.colors.secondary};
-    border-radius: 1.4rem;
+    border-radius: ${theme.spacings[3.5]};
   `}
 `;
 
 export const Item = styled.div`
   ${({ theme }) => css`
-    padding: 1rem 1.6rem;
+    padding: ${theme.spacings[2.5]} ${theme.spacings[4]};
 
     & + div {
-      border-top: 0.1rem solid ${theme.colors.outline};
+      border-top: ${theme.spacings.px} solid ${theme.colors.outline};
     }
 
     &:first-child {
-      padding-top: 1.3rem;
+      padding-top: ${theme.spacings[3]};
     }
 
     &:last-child {
-      padding-bottom: 1.7rem;
+      padding-bottom: ${theme.spacings[4]};
     }
   `}
 `;

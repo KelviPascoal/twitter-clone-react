@@ -13,7 +13,7 @@ export const Container = styled.div`
     > p {
       font-size: ${theme.font.sizes.small};
       color: ${theme.colors.gray};
-      margin-bottom: 0.3rem;
+      margin-bottom: ${theme.spacings[1]};
     }
   `}
 `;

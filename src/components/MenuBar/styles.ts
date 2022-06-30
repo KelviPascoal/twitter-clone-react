@@ -29,7 +29,7 @@ export const Container = styled.div`
       top: 0;
       left: 0;
 
-      padding: 0.9rem 1.9rem 2rem;
+      padding: ${theme.spacings[2.5]} ${theme.spacings[5]} ${theme.spacings[5]};
 
       max-height: 100vh;
       overflow-y: auto;
@@ -43,7 +43,7 @@ export const Topside = styled.div`
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: ${theme.breakpoints.lg}) {
+    @media (min-width: ${theme.breakpoints.xl}) {
       align-items: flex-start;
     }
   `}
@@ -51,14 +51,14 @@ export const Topside = styled.div`
 
 export const Logo = styled(TwitterLogo)`
   ${({ theme }) => css`
-    width: 4.1rem;
-    height: 4.1rem;
+    width: ${theme.spacings[10]};
+    height: ${theme.spacings[10]};
 
     > path {
       fill: ${theme.colors.twitter};
     }
 
-    margin-bottom: 2rem;
+    margin-bottom: ${theme.spacings[5]};
   `}
 `;
 
@@ -72,37 +72,37 @@ export const MenuButton = styled.button`
       display: none;
     }
 
-    @media (min-width: ${theme.breakpoints.lg}) {
+    @media (min-width: ${theme.breakpoints.xl}) {
       > span {
         display: inline;
-        margin-left: 1.9rem;
+        margin-left: ${theme.spacings[5]};
 
         font-weight: bold;
         font-size: ${theme.font.sizes.large};
         color: ${theme.colors.white};
       }
 
-      padding-right: 1.5rem;
+      padding-right: ${theme.spacings[4]};
     }
 
-    padding: 0.8rem 0;
+    padding: ${theme.spacings[2]} 0;
     outline: 0;
 
     & + button {
-      margin-top: 1.6rem;
+      margin-top: ${theme.spacings[3.5]};
     }
 
     & + button:last-child {
-      margin-top: 3.3rem;
+      margin-top: ${theme.spacings[8]};
 
-      width: 4rem;
-      height: 4rem;
+      width: ${theme.spacings[10]};
+      height: ${theme.spacings[10]};
 
       > span {
         display: none;
       }
 
-      @media (min-width: ${theme.breakpoints.lg}) {
+      @media (min-width: ${theme.breakpoints.xl}) {
         width: 100%;
         height: unset;
 
@@ -113,7 +113,7 @@ export const MenuButton = styled.button`
     }
 
     cursor: pointer;
-    border-radius: 2.5rem;
+    border-radius: ${theme.spacings[6]};
 
     &:hover {
       background-color: ${theme.colors.twitterDarkHover};
@@ -133,8 +133,8 @@ export const MenuButton = styled.button`
 const iconCSS = (theme: ThemeDefault) => css`
   flex-shrink: 0;
 
-  width: 3rem;
-  height: 3rem;
+  width: ${theme.spacings[8]};
+  height: ${theme.spacings[8]};
   color: ${theme.colors.white};
 `;
 
@@ -158,16 +158,18 @@ export const SearchIcon: ElementType = styled(Search)`
 `;
 
 export const Botside = styled.div`
-  margin-top: 2rem;
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings[8]};
 
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+  `}
 `;
 
 export const Avatar = styled.div`
   ${({ theme }) => css`
-    width: 3.9rem;
-    height: 3.9rem;
+    width: ${theme.spacings[10]};
+    height: ${theme.spacings[10]};
 
     flex-shrink: 0;
 
@@ -179,11 +181,11 @@ export const Avatar = styled.div`
 export const ProfileData = styled.div`
   ${({ theme }) => css`
     display: none;
-    @media (min-width: ${theme.breakpoints.lg}) {
+    @media (min-width: ${theme.breakpoints.xl}) {
       display: flex;
       flex-direction: column;
 
-      margin-left: 1rem;
+      margin-left: ${theme.spacings[2.5]};
       font-size: ${theme.font.sizes.large};
 
       span {
@@ -197,12 +199,12 @@ export const ExitIcon: ElementType = styled(Options)`
   ${({ theme }) => css`
     display: none;
 
-    @media (min-width: ${theme.breakpoints.lg}) {
+    @media (min-width: ${theme.breakpoints.xl}) {
       display: inline-block;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: ${theme.spacings[6]};
+      height: ${theme.spacings[6]};
       color: ${theme.colors.white};
-      margin-left: 3rem;
+      margin-left: ${theme.spacings[8]};
       cursor: pointer;
 
       &:hover {
@@ -231,12 +233,13 @@ export const BottomMenu = styled.div`
 
     background: ${theme.colors.primary};
     width: 100%;
-    border-top: 0.1rem solid ${theme.colors.outline};
+    border-top: ${theme.spacings.px} solid ${theme.colors.outline};
 
     display: flex;
     justify-content: space-between;
 
-    padding: 0.8rem min(4.6rem, max(10vw, 1rem));
+    padding: ${theme.spacings[2]}
+      min(${theme.spacings[12]}, max(10vw, ${theme.spacings[2.5]}));
 
     @media (min-width: ${theme.breakpoints.sm}) {
       display: none;

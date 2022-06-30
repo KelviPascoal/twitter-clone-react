@@ -9,10 +9,12 @@ export const Button = styled.button<ButtonProps>`
   ${({ outlined, theme }) => css`
     background: ${outlined ? "transparent" : theme.colors.twitter};
     color: ${outlined ? theme.colors.twitter : theme.colors.white};
-    border: ${outlined ? `0.1rem solid ${theme.colors.twitter}` : "none"};
+    border: ${outlined
+      ? `${theme.spacings.px} solid ${theme.colors.twitter}`
+      : "none"};
 
-    padding: 1.6rem;
-    border-radius: 2.5rem;
+    padding: ${theme.spacings[4]};
+    border-radius: ${theme.spacings[6]};
 
     font-weight: bold;
     font-size: ${theme.font.sizes.medium};

@@ -11,8 +11,8 @@ export const Container = styled.div`
     width: min(60.1rem, 100%);
 
     @media (min-width: ${theme.breakpoints.sm}) {
-      border-left: 0.1rem solid ${theme.colors.outline};
-      border-right: 0.1rem solid ${theme.colors.outline};
+      border-left: ${theme.spacings.px} solid ${theme.colors.outline};
+      border-right: ${theme.spacings.px} solid ${theme.colors.outline};
     }
   `}
 `;
@@ -29,11 +29,11 @@ export const Header = styled.div`
 
     text-align: left;
 
-    padding: 0.8rem 0 0.9rem 1.3rem;
-    border-bottom: 0.1rem solid ${theme.colors.outline};
+    padding: ${theme.spacings[2]} 0 ${theme.spacings[2]} ${theme.spacings[3]};
+    border-bottom: ${theme.spacings.px} solid ${theme.colors.outline};
 
     > button {
-      padding: 0.8rem;
+      padding: ${theme.spacings[2]};
       border-radius: 50%;
 
       outline: 0;
@@ -48,8 +48,8 @@ export const Header = styled.div`
 
 export const BackIcon: ElementType = styled(ArrowLeft)`
   ${({ theme }) => css`
-    width: 2.4rem;
-    height: 2.4rem;
+    width: ${theme.spacings[6]};
+    height: ${theme.spacings[6]};
 
     fill: ${theme.colors.twitter};
   `}
@@ -57,7 +57,7 @@ export const BackIcon: ElementType = styled(ArrowLeft)`
 
 export const ProfileInfo = styled.div`
   ${({ theme }) => css`
-    margin-left: 1.7rem;
+    margin-left: ${theme.spacings[4]};
 
     display: flex;
     flex-direction: column;
