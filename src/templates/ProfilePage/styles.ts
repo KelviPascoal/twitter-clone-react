@@ -23,7 +23,7 @@ export const Banner = styled.div`
     flex-shrink: 0;
 
     width: 100%;
-    height: min(33vw, 20rem);
+    height: min(33vw, ${theme.spacings[52]});
 
     background: ${theme.colors.twitter};
 
@@ -34,14 +34,15 @@ export const Banner = styled.div`
 export const AvatarWrapper = styled.div`
   ${({ theme }) => css`
     position: absolute;
-    bottom: max(-6rem, -10vw);
+    bottom: max(-${theme.spacings[15]}, -10vw);
     left: ${theme.font.sizes.medium};
   `}
 `;
 
 export const ProfileData = styled.div`
   ${({ theme }) => css`
-    padding: min(calc(10vw + 0.7rem), 6.7rem) 1.6rem 0;
+    padding: min(calc(10vw + ${theme.spacings[1.5]}), ${theme.spacings[16]})
+      ${theme.spacings[4]} 0;
 
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@ export const ProfileData = styled.div`
     }
     > p {
       font-size: ${theme.font.sizes.medium};
-      margin-top: 1.1rem;
+      margin-top: ${theme.spacings[3]};
 
       > a {
         text-decoration: none;
@@ -70,8 +71,8 @@ export const ProfileData = styled.div`
     }
     > ul {
       list-style: none;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: ${theme.spacings[2.5]};
+      margin-bottom: ${theme.spacings[2.5]};
 
       > li {
         font-size: ${theme.font.sizes.medium};
@@ -79,7 +80,7 @@ export const ProfileData = styled.div`
 
         > svg {
           fill: ${theme.colors.gray};
-          margin-right: 0.5rem;
+          margin-right: ${theme.spacings[1.5]};
         }
       }
     }
@@ -87,8 +88,8 @@ export const ProfileData = styled.div`
 `;
 
 const iconCSS = (theme: ThemeDefault) => css`
-  width: 2rem;
-  height: 2rem;
+  width: ${theme.spacings[5]};
+  height: ${theme.spacings[5]};
 
   color: ${theme.colors.gray};
 `;
@@ -114,7 +115,7 @@ export const Followage = styled.div`
       color: ${theme.colors.gray};
 
       & + span {
-        margin-left: 2rem;
+        margin-left: ${theme.spacings[5]};
       }
     }
   `}
@@ -124,14 +125,14 @@ export const EditButton = styled(Button)`
   ${({ theme }) => css`
     position: absolute;
     top: 2vw;
-    right: 0.7rem;
+    right: ${theme.spacings[2]};
 
-    padding: 0.4rem 1.6rem;
+    padding: ${theme.spacings[1]} ${theme.spacings[4]};
     font-size: ${theme.font.sizes.small};
 
     @media (min-width: ${theme.breakpoints.xs}) {
-      top: 1rem;
-      padding: 1rem 1.9rem;
+      top: ${theme.spacings[2.5]};
+      padding: ${theme.spacings[2.5]} ${theme.spacings[5]};
       font-size: ${theme.font.sizes.medium};
     }
   `}
