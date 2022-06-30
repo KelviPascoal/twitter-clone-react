@@ -8,7 +8,7 @@ export function Main() {
     <S.Container>
       <S.Header>
         <button>
-          <S.BackIcon alt="Voltar" />
+          <S.BackIcon aria-label="Voltar" />
         </button>
 
         <S.ProfileInfo>

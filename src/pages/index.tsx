@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>KelviPascoal (@KelviPascoal)</title>
+        <title>KelviPascoal (@KelviPascoal) / Twitter</title>
         <meta
           name="description"
           content="perfil do usuario KelviPascoal"

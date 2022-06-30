@@ -9,7 +9,7 @@ export const Container = styled.div`
       font-size: ${theme.font.sizes.small};
     }
 
-    > span {
+    > p {
       font-size: ${theme.font.sizes.small};
       color: ${theme.colors.gray};
       margin-bottom: 0.3rem;
