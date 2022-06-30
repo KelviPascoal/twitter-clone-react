@@ -7,9 +7,9 @@ import {
   Email,
   FavoriteBorder,
   Person,
-  Options,
   TwitterLogo,
   Search,
+  Options,
 } from "../../styles/Icons";
 import { Button } from "../Button";
 import { css } from "@emotion/react";
@@ -179,7 +179,6 @@ export const Avatar = styled.div`
 export const ProfileData = styled.div`
   ${({ theme }) => css`
     display: none;
-
     @media (min-width: ${theme.breakpoints.lg}) {
       display: flex;
       flex-direction: column;
