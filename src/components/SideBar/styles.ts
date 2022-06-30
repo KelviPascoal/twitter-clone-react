@@ -1,7 +1,8 @@
 import { ElementType } from "react";
-import styled, { css } from "styled-components";
+import styled from "@emotion/styled";
 
 import { Search } from "../../styles/Icons";
+import { css } from "@emotion/react";
 
 export const Container = styled.div`
   display: none;

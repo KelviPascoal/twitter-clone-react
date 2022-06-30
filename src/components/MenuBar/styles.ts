@@ -1,5 +1,5 @@
 import { ElementType } from "react";
-import styled, { css } from "styled-components";
+import styled from "@emotion/styled";
 
 import {
   Home,
@@ -12,6 +12,9 @@ import {
   Search,
 } from "../../styles/Icons";
 import { Button } from "../Button";
+import { css } from "@emotion/react";
+import { ThemeDefault } from "../../styles/emotion";
+import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -127,33 +130,31 @@ export const MenuButton = styled.button`
   `}
 `;
 
-const iconCSS = css`
-  ${({ theme }) => css`
-    flex-shrink: 0;
+const iconCSS = (theme: ThemeDefault) => css`
+  flex-shrink: 0;
 
-    width: 3rem;
-    height: 3rem;
-    color: ${theme.colors.white};
-  `}
+  width: 3rem;
+  height: 3rem;
+  color: ${theme.colors.white};
 `;
 
 export const HomeIcon: ElementType = styled(Home)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const BellIcon: ElementType = styled(Notifications)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const EmailIcon: ElementType = styled(Email)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const FavoriteIcon: ElementType = styled(FavoriteBorder)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const ProfileIcon: ElementType = styled(Person)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const SearchIcon: ElementType = styled(Search)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 
 export const Botside = styled.div`

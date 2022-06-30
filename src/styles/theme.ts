@@ -32,6 +32,5 @@ export const theme = {
     sm: "500px",
     md: "768px",
     lg: "1280px",
-    // xl: "80em",
   },
 };

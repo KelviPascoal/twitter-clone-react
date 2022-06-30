@@ -1,14 +1,31 @@
+// export {
+//   Home,
+//   Notifications,
+//   Email,
+//   FavoriteBorder,
+//   ExitToApp,
+//   LocationOn,
+//   Search,
+//   CalendarToday,
+// } from "styled-icons/material-outlined";
+// export { Person, Cake, Favorite } from "styled-icons/material";
+// export { ArrowLeft } from "styled-icons/heroicons-solid";
+// export { Chat } from "styled-icons/heroicons-outline";
+// export { RocketseatIcon as Rocketseat } from "../components/RocketseatIcon";
+
 export {
-  Home,
-  Notifications,
-  Email,
-  FavoriteBorder,
-  ExitToApp,
-  LocationOn,
-  Search,
-  CalendarToday,
-} from "styled-icons/material-outlined";
-export { Person, Cake, Favorite } from "styled-icons/material";
-export { ArrowLeft } from "styled-icons/heroicons-solid";
-export { Chat } from "styled-icons/heroicons-outline";
-export { RocketseatIcon as Rocketseat } from "../components/RocketseatIcon";
+  FaAccessibleIcon as Home,
+  FaAccessibleIcon as Notifications,
+  FaAccessibleIcon as Email,
+  FaAccessibleIcon as FavoriteBorder,
+  FaAccessibleIcon as ExitToApp,
+  FaAccessibleIcon as LocationOn,
+  FaAccessibleIcon as Search,
+  FaAccessibleIcon as CalendarToday,
+  FaAccessibleIcon as Person,
+  FaAccessibleIcon as Cake,
+  FaAccessibleIcon as Favorite,
+  FaAccessibleIcon as ArrowLeft,
+  FaAccessibleIcon as Chat,
+  FaAccessibleIcon as Rocketseat,
+} from "react-icons/fa";

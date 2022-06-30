@@ -1,7 +1,9 @@
-import styled, { css } from "styled-components";
-
+import styled from "@emotion/styled";
 import { LocationOn, Cake } from "../../styles/Icons";
 import { Button } from "../../components/Button";
+import { css } from "@emotion/react";
+import { ThemeDefault } from "../../styles/emotion";
+import { theme } from "../../styles/theme";
 
 export const Container = styled.div`
   display: flex;
@@ -84,20 +86,18 @@ export const ProfileData = styled.div`
   `}
 `;
 
-const iconCSS = css`
-  ${({ theme }) => css`
-    width: 2rem;
-    height: 2rem;
+const iconCSS = (theme: ThemeDefault) => css`
+  width: 2rem;
+  height: 2rem;
 
-    color: ${theme.colors.gray};
-  `}
+  color: ${theme.colors.gray};
 `;
 
 export const LocationIcon = styled(LocationOn)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 export const CakeIcon = styled(Cake)`
-  ${iconCSS}
+  ${iconCSS(theme)}
 `;
 
 export const Followage = styled.div`
